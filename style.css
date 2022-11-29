@@ -1,0 +1,367 @@
+:root{
+    --stDarkGreen:#1E3933;
+    --stDarkFont:#202429;
+    --stFont:#4B4E51;
+    --stDarkGrey:#4B4E51;
+    --stFontGrey: #6B6A6B;
+    --stFontLighGrey:#ABB1B5;
+    --stWhite:#FFFFFF;
+    --stSecondBg:#ECEBE8;
+    --stGreen:#00754A;
+    --stFooterBg:#0E392C;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main{
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.menu li{
+    transform: scaley(0.9);
+    color: var(--stDarkGrey);
+    list-style : none;
+    font-weight: 300;
+}
+.menu li:first-of-type{
+    color: var(--stDarkFont);
+    font-weight: 550;
+    border-bottom: 2px solid var(--stDarkGreen);
+    padding-bottom: 10px;
+}
+.menu img{
+    width: 40px;
+    height: 40px;
+}
+.search-sec{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.search-box{
+    height: 40px;
+    width: 250px;
+    gap: 20px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 5px -2px var(--stFontGrey);
+    border-radius: 20px;
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+.search-box input{
+    height: 100%;
+    border: none;
+    outline: none;
+    width: 100%;
+
+}
+.search-box i{
+    color: var(--stFontGrey);
+}
+.profile-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid var(--stFontGrey);
+}
+.profile-icon i{
+    font-size: 1.4rem;
+    color: var(--stFontGrey);
+}
+.remember{
+    width: 100%;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    background-color: var(--stDarkGreen);
+}
+.container{
+    width: 1300px;
+    display: flex;
+}
+.remember .container{
+    color: var(--stWhite);
+    font-size: 1.2rem;
+    font-weight: 300;
+    align-items: center;
+    justify-content: space-between;
+}
+.remember .container button{
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+    font-size: .7rem;
+    border: 1.9px solid var(--stWhite);
+    color: var(--stWhite);
+    background: none;
+    outline: none;
+    border-radius: 20px;
+}
+.item-sec{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+.item-sec h2{
+    color: var(--stDarkGreen);
+}
+.item-sec .items{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.item img{
+    width: 100px;
+    border-radius: 60px;
+}
+.item span{
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--stDarkFont);
+}
+.recommendation{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 45px 0px;
+    background-color: var(--stSecondBg);
+}
+.recommendation h2{
+    color: var(--stDarkGreen);
+}
+.recommendation .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rec-head{
+    display: flex;
+    justify-content: space-between;
+}
+.rec-head span{
+    color: var(--stGreen);
+    font-size: .85rem;
+    font-weight: 550;
+}
+.rec-collection{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+.rec-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: calc(100/3);
+    padding: 15px 20px;
+    background-color: var(--stWhite);
+    box-shadow: 0px 0px 5px -2px var(--stFontGrey);
+    border-radius: 10px;
+}
+.rec-card-details{
+    display: flex;
+    gap: 20px;
+}
+.rec-card-details img{
+    width: 80px;
+    border-radius: 12px;
+    height: 80px;
+    object-fit: cover;
+}
+.rec-card-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5px;
+}
+.rec-card-detail b{
+    font-size: .85rem;
+}
+.rec-card-detail img{
+    width: 15px;
+    height: 15px;
+    border-radius: 0px;
+}
+.rec-card-detail span{
+    font-size: .65rem;
+    font-family: Roboto;
+    color: var(--stFontGrey);
+}
+.rec-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rec-price b{
+    font-size: .8rem;
+
+}
+.rec-price button{
+    width: 90px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: var(--stGreen);
+    color: var(--stWhite);
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px -3px var(--stGreen);
+
+}
+.deal-sec{
+    background-color: var(--stGreen);
+    border-radius: 10px;
+    margin: 70px 0px;
+}
+.deal-sec>span{
+    position: absolute;
+    right: 320px;
+    color: var(--stWhite);
+    padding-top: 10px;
+    font-size: .7rem;
+    letter-spacing: -0.5px;
+}
+.deal-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.deal-container img{
+    width: 100px;
+    margin-top: -10px;
+    flex: 7%;
+}
+.deal-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 83%;
+    color: var(--stWhite);
+    padding-left:80px;
+}
+.deal-btn{
+    flex: 10%;
+}
+.deal-details span{
+    font-size: .9rem;
+}
+.deal-details span{
+    margin-top: 10px;
+}
+.deal-details h3{
+    margin-top: 10px;
+}
+.deal-details label{
+    font-size: .8rem;
+    margin-top: 30px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.934);
+}
+.deal-btn{
+    height: 170px;
+    display: flex;
+    padding-right: 30px;
+    align-items: flex-end;
+}
+.deal-btn button{
+    height: 50px;
+    width: 200px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--stWhite);
+    outline: none;
+}
+.more-sec{
+    background-color:var(--stSecondBg);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.more-sec>.container>h2{
+    margin-top: 30px;
+    color: var(--stDarkGreen);
+}
+.more.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    background-image: url(https://preprodtsbstorage.blob.core.windows.net/cms/uploads/Coffeculture_Blog_Web_Banner_2_X_8b72db6546.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--stWhite);
+    border-radius: 10px;
+    margin: 30px 0px;
+    box-shadow: inset 0px -100px 130px 30px rgba(0, 0, 0, 0.91);
+}
+.more.container>span{
+    background-color: #E6ECEB;
+    color: var(--stGreen);
+    width: 80px;
+    padding: 3px;text-align: center;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: .7rem;
+    margin: 30px;
+}
+.more-details{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+}
+.more-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.more-details span{
+    font-size: .9rem;
+    opacity: 80%;
+}
+.more-details button{
+    margin: 25px 0px 10px 0px;
+    width: 200px;
+    height: 30px;
+    font-size: .75rem;
+    background-color: var(--stWhite);
+    color: var(--stDarkFont);
+    border: none;
+    outline: none;
+    border-radius: 20px; 
+    font-weight: 600;
+}
