@@ -239,6 +239,12 @@ nav{
     font-weight: 600;
     border-radius: 20px;
     box-shadow: 0px 0px 10px -3px var(--stGreen);
+    cursor: pointer;
+
+}
+.rec-price button:hover{
+    background-color: var(--stDarkGreen);
+
 
 }
 .deal-sec{
@@ -436,6 +442,9 @@ nav{
     border-radius: 20px;
     margin-top: 20px;
 }
+.shop-details button:hover{
+    background-color: var(--stDarkGreen);
+}
 footer .container{
     display: flex;
     justify-content: space-between;
@@ -446,7 +455,7 @@ footer .container{
 }
 footer{
     background-color: var(--stFooterBg);
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -502,4 +511,7 @@ footer .container:last-child{
 .foot-copyright{
     font-size: .6rem;
     font-weight: 350;
+}
+button{
+    cursor: pointer;
 }
